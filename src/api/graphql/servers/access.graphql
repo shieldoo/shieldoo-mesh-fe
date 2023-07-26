@@ -1,0 +1,7 @@
+query ServerAccess($id: Int!) {
+  server(id: $id) {
+    access {
+      config
+    }
+  }
+}

@@ -1,0 +1,22 @@
+fragment FwConfigFields on FwConfigRule {
+  proto
+  port
+  host
+  groups {
+    id
+    name
+  }
+}
+
+query GetFirewall($id: Int!) {
+  firewallConfiguration(id: $id) {
+    id
+    name
+    fwConfigOuts {
+      ...FwConfigFields
+    }
+    fwConfigIns {
+      ...FwConfigFields
+    }
+  }
+}

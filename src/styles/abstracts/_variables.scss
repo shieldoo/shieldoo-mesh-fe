@@ -1,0 +1,45 @@
+$c-surface_surface_white: #ffffff;
+$c-surface_surface_0: #f4f6f7;
+$c-surface_surface_10: #dfe2e3;
+$c-surface_surface_20: #c9ced1;
+$c-surface_surface_30: #afb6ba;
+$c-surface_surface_40: #969fa3;
+$c-surface_surface_50: #7e878c;
+$c-surface_surface_60: #677075;
+$c-surface_surface_70: #545d62;
+$c-surface_surface_80: #424a4e;
+$c-surface_surface_90: #30373b;
+$c-surface_surface_100: #1f2427;
+
+$c-primary_teal_default: #74fbdb;
+$c-primary_teal_hover: #009e79;
+$c-primary_teal_select: #4ea893;
+$c-primary_dark_blue: #000129;
+
+$c-status_red_100: #d93c3c;
+$c-status_red_12: #fae8e8;
+$c-status_orange_100: #d99a3c;
+$c-status_orange_12: #faf3e8;
+$c-status_green_100: #039100;
+$c-status_green_12: #e1f2e0;
+$c-status_blue_100: #247ab7;
+$c-status_blue_12: #e5eff6;
+
+$gradient: conic-gradient(
+  from 135deg at 50% 50%,
+  #9bffe4 -54.95deg,
+  #9035e0 90.6deg,
+  #4bade1 188.4deg,
+  #9bffe4 305.05deg,
+  #9035e0 450.6deg
+);
+
+$c-hyperlink_default: #145fd7;
+
+$font-family: "IBM Plex Sans", "Segoe UI", "Arial", sans-serif;
+$box-shadow: rgba($c-primary_dark_blue, 0.16);
+$fa-style-family: $fa-font-family;
+
+/** Obsolete, use Surface according to spec */
+$c-obsolete-grey_100: #757575;
+$c-obsolete-grey_40: #e5e5e5;

@@ -1,0 +1,7 @@
+query Groups($name: String) {
+  groups(name: $name) {
+    id
+    name
+    description
+  }
+}

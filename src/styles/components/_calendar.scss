@@ -1,0 +1,117 @@
+.p-calendar.p-component.p-invalid {
+  border: solid 0.1rem $c-status_red_100;
+  border-radius: 0.4rem;
+}
+
+.p-calendar-w-btn-right {
+  .p-inputtext {
+    border-right: none;
+  }
+
+  .p-button.p-datepicker-trigger {
+    background: transparent;
+    border: solid 1px $c-obsolete-grey_40;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: none;
+  }
+}
+
+.p-calendar-w-btn-left {
+  .p-inputtext {
+    border-left: none;
+  }
+
+  .p-button.p-datepicker-trigger {
+    background: transparent;
+    border: solid 1px $c-obsolete-grey_40;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
+  }
+}
+
+.p-calendar-w-btn {
+  .p-button.p-datepicker-trigger {
+    width: 3.2rem;
+    padding: 0 .8rem;
+
+    .p-button-icon {
+      margin: 0;
+    }
+  }
+}
+
+.p-datepicker:not(.p-datepicker-inline) {
+  @include dropdown-panel;
+  min-width: 27rem !important;
+}
+
+.p-datepicker {
+  padding: .8rem;
+  background: $c-surface_surface_white;
+  color: $c-primary_dark_blue;
+
+  .p-datepicker-header {
+    padding: .8rem;
+    border-bottom: solid 1px $c-obsolete-grey_40;
+  }
+
+  table {
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+
+    td {
+      padding: .4rem;
+
+      span.p-disabled {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.p-datepicker-next, .p-datepicker-prev {
+  background: transparent;
+  border: none;
+}
+
+.p-datepicker-prev-icon::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-angle-left);
+}
+
+.p-datepicker-next-icon::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-angle-right);
+}
+
+.p-datepicker, .p-timepicker {
+  .p-link {
+    appearance: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .p-link + .p-link {
+    margin-left: .4rem;
+  }
+}
+
+.p-timepicker {
+  gap: .4rem;
+
+  .p-separator {
+    align-self: flex-start;
+  }
+}
+
+.p-yearpicker, .p-monthpicker {
+  margin-top: .8rem;
+}
+
+.p-datepicker-buttonbar {
+  margin-top: .4rem;
+}

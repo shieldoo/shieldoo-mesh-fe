@@ -1,0 +1,45 @@
+.page-entity-detail {
+  .toolbar-text-large {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .toolbar-text-normal {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .no-access-found {
+    font-size: 7rem;
+    background: conic-gradient(
+      from 135deg at 50% 50%,
+      #9bffe4 -54.95deg,
+      #9035e0 90.6deg,
+      #4bade1 188.4deg,
+      #9bffe4 305.05deg,
+      #9035e0 450.6deg
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .no-access-foun-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .access-add-button-content {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  .access-expand-label {
+    color: $c-obsolete-grey_100;
+    font-weight: bold;
+  }
+  tr .access-expand-row {
+    border-bottom: none;
+  }
+  td .access-expand-col {
+    line-height: 3.5rem;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,21 @@
+.content-tabs {
+  margin-top: 2rem;
+  padding: 0rem 0.4rem;
+  border-top: 1px solid $c-obsolete-grey_40;
+  border-bottom: 1px solid $c-obsolete-grey_40;
+  background-color: $c-surface_surface_0;
+
+  .p-error {
+    .p-menuitem-icon {
+      font-weight: 400;
+      line-height: 0;
+      color: $c-status_red_100;
+    }
+    .p-menuitem-text {
+      color: $c-status_red_100;
+    }
+  }
+  .p-menuitem-text {
+    color: $c-primary_dark_blue;
+  }
+}

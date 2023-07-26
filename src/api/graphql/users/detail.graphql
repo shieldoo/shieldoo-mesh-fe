@@ -1,0 +1,90 @@
+query UserDetail($id: Int!) {
+  user(id: $id) {
+    id
+    upn
+    name
+    description
+    origin
+    roles
+    userAccesses {
+      id
+      name
+      description
+      groups {
+        id
+        name
+        description
+      }
+      fwConfig {
+        id
+        name
+        fwConfigOuts {
+          port
+          proto
+          host
+          groups {
+            id
+            name
+            description
+          }
+        }
+        fwConfigIns {
+          port
+          proto
+          host
+          groups {
+            id
+            name
+            description
+          }
+        }
+        changed
+      }
+      validFrom
+      validTo
+      changed
+      userAccessTemplate {
+        id
+        name
+      }
+      accesses {
+        id
+        name
+        ipAddress
+        fqdn
+        description
+        changed
+        statistics {
+          isConnectd
+          isOverRestrictiveNetwork
+          lastContact
+          lastContactFromNow
+        }
+        deviceInfo {
+          name
+          deviceId
+          deviceOSType
+          deviceOS
+          contacted
+        }
+      }
+      serversForAccess {
+        name
+        ipAddress
+        description
+        listeners {
+          listenPort
+          protocol
+          forwardHost
+          forwardPort
+          accessListenerType {
+            id
+            glyph
+            name
+          }
+          description
+        }
+      }
+    }
+  }
+}

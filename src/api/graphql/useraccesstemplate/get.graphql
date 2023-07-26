@@ -1,0 +1,17 @@
+query UserAccessTemplate($userAccessTemplateId: Int!) {
+  userAccessTemplate(id: $userAccessTemplateId) {
+    id
+    name
+    description
+    groups {
+      id
+      name
+      description
+    }
+    fwConfig {
+      id
+      name
+    }
+    validTo
+  }
+}

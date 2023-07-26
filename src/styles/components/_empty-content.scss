@@ -1,0 +1,28 @@
+.empty-content {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+  .icon {
+    background: conic-gradient(
+      from 135deg at 50% 50%,
+      #9bffe4 -54.95deg,
+      #9035e0 90.6deg,
+      #4bade1 188.4deg,
+      #9bffe4 305.05deg,
+      #9035e0 450.6deg
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .content {
+    text-align: center;
+  }
+
+  &-dashboard{
+    height: 30rem;    
+  }
+}

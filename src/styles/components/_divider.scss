@@ -1,0 +1,10 @@
+.p-divider.p-divider-horizontal {
+  margin: 2.25rem 0;
+  padding: 0 1.25rem;
+}
+.p-divider.p-divider-horizontal:before {
+  border-top: 1px solid $c-obsolete-grey_40;
+}
+.p-divider.p-divider-horizontal .p-divider-content {
+  padding: 0 0.5rem;
+}

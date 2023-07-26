@@ -1,0 +1,5 @@
+mutation SaveServer($data: ServerData!) {
+  serverSave(data: $data) {
+    id
+  }
+}

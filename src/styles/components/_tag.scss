@@ -1,0 +1,35 @@
+.p-tag {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  margin-left: 0.5em;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  background-color: $c-primary_dark_blue;
+
+  .p-tag-icon {
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+    color: $c-surface_surface_white;
+  }
+
+  .p-tag-value {
+    color: $c-surface_surface_white;
+    font-weight: 600;
+  }
+
+  &.p-tag-success {
+    background-color: $c-status_green_100;
+  }
+
+  &.p-tag-info {
+    background-color: $c-status_blue_100;
+  }
+
+  &.p-tag-warning {
+    background-color: $c-status_orange_100;
+  }
+
+  &.p-tag-danger {
+    background-color: $c-status_red_100;
+  }
+}

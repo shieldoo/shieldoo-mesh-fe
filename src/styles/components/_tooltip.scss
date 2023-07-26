@@ -1,0 +1,27 @@
+.p-tooltip {
+  font-size: 1.2rem;
+
+  .p-tooltip-text {
+    padding: 0.8rem;
+    background: $c-primary_dark_blue;
+    border-radius: 6px;
+    color: #ffffff;
+    box-shadow: 0 2px 12px 0 $box-shadow;
+  }
+
+  &.p-tooltip-right .p-tooltip-arrow {
+    border-right-color: $c-primary_dark_blue;
+  }
+
+  &.p-tooltip-left .p-tooltip-arrow {
+    border-left-color: $c-primary_dark-blue;
+  }
+
+  &.p-tooltip-top .p-tooltip-arrow {
+    border-top-color: $c-primary_dark-blue;
+  }
+
+  &.p-tooltip-bottom .p-tooltip-arrow {
+    border-bottom-color: $c-primary_dark-blue;
+  }
+}

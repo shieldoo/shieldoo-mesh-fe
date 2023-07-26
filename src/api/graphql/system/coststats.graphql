@@ -1,0 +1,13 @@
+query CostsUsage {
+  monthCostUsage {
+    cost
+    costUsageItems {
+      cost
+      hours
+      isUser
+      upn
+      yearMonth
+    }
+    yearMonth
+  }
+}

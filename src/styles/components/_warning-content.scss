@@ -1,0 +1,39 @@
+.warning-content {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  .title {
+    font-size: 24px;
+    line-height: 40px;
+    padding-top: 10px;
+  }
+  .icon {
+    display: inline;
+    width: 80px;
+    height: 80px;
+    font-size: 56px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .icon-warning {
+    background-color: $c-status_orange_100;
+  }
+  .icon-error {
+    background-color: $c-status_red_100;
+  }
+  .action {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content {
+    text-align: center;
+  }
+}

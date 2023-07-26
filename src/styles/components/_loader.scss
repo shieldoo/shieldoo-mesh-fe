@@ -1,0 +1,11 @@
+.loader {
+  margin-right: 0.8rem;
+
+  /* Colors cannot be variable */
+  --fa-secondary-opacity: 1;
+  --fa-primary-color: transparent;
+
+  &.blue100 {
+    --fa-secondary-color: #247ab7; // $c-status_blue_100
+  }
+}

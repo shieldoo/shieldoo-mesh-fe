@@ -1,0 +1,24 @@
+query SystemConfig {
+  systemConfig {
+    networkCidr
+    maximumCertificateValidity
+    lighthouses {
+      ipAddress
+      port
+      publicIp
+    }
+    aadConfig {
+      adminGroupObjectId
+      clientId
+      clientSecret
+      isEnabled
+      lastProcessingMessage
+      tenantId
+    }
+    cliApiConfig {
+      apiKey
+      isEnabled
+      url
+    }
+  }
+}

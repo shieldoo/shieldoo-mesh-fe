@@ -1,0 +1,10 @@
+mutation AadConfigSave($data: AadConfigData!) {
+  systemAadConfigSave(data: $data) {
+    adminGroupObjectId
+    clientId
+    clientSecret
+    isEnabled
+    lastProcessingMessage
+    tenantId
+  }
+}

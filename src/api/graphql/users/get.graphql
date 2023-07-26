@@ -1,0 +1,13 @@
+query User($id: Int!) {
+  user(id: $id) {
+    id
+    name
+    upn
+    description
+    roles
+    origin
+    userAccesses {
+      name
+    }
+  }
+}

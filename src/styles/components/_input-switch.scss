@@ -1,0 +1,33 @@
+$input-switch-size: 1.6rem;
+
+.p-inputswitch {
+  width: 3.6rem;
+  height: 2rem;
+
+  .p-inputswitch-slider {
+    background: $c-obsolete-grey_100;
+    transition: background-color .2s, color .2s, border-color .2s, box-shadow .2s;
+    border-radius: 12px;
+
+    &::before {
+      background: $c-surface_surface_0;
+      width: $input-switch-size;
+      height: $input-switch-size;
+      left: .2rem;
+      margin-top: -.8rem;
+      border-radius: 50%;
+      transition-duration: .2s;
+    }
+  }
+
+  &.p-inputswitch-checked {
+    .p-inputswitch-slider {
+      background: $c-status_blue_100;
+
+      &::before {
+        background: $c-surface_surface_white;
+        transform: translateX($input-switch-size);
+      }
+    }
+  }
+}

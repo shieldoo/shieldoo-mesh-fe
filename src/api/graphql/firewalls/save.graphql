@@ -1,0 +1,5 @@
+mutation SaveFirewall($data: FwConfigData!) {
+  firewallConfigurationSave(data: $data) {
+    id
+  }
+}

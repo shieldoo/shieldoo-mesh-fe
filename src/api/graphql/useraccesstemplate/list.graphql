@@ -1,0 +1,8 @@
+query UserAccessTemplates($name: String) {
+  userAccessTemplates(name: $name) {
+    id
+    name
+    description
+    validTo
+  }
+}

@@ -1,0 +1,44 @@
+query ServerDetail($id: Int!) {
+  server(id: $id) {
+    id
+    name
+    allowAutoUpdate
+    serverOSAutoUpdatePolicy {
+      allAutoUpdateEnabled
+      osAutoUpdateEnabled
+      osAutoUpdateHour
+      restartAfterUpdate
+      securityAutoUpdateEnabled
+    }
+    description
+    access {
+      description
+      statistics {
+        isConnectd
+        isOverRestrictiveNetwork
+        lastContact
+        lastContactFromNow
+      }
+      deviceInfo {
+        name
+        deviceId
+        deviceOSType
+        deviceOS
+        deviceSWVersion
+        osAutoUpdate {
+          description
+          lastUpdate
+          lastUpdateOutput
+          lastUpdateSuccess
+          name
+          osType
+          otherUpdates
+          otherUpdatesCount
+          securityUpdates
+          securityUpdatesCount
+          version
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation SaveGroup($data: GroupData!) {
+  groupSave(data: $data) {
+    id
+  }
+}

@@ -1,0 +1,5 @@
+mutation SystemConfigSave($data: SystemConfigData!) {
+  systemConfigSave(data: $data) {
+    networkCidr
+  }
+}

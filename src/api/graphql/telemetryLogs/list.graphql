@@ -1,0 +1,8 @@
+query TelemetryLogs($filter: String, $upn: String, $createdFrom: DateTime, $createdTo: DateTime) {
+  telemetryLogs(filter: $filter, upn: $upn, createdFrom: $createdFrom, createdTo: $createdTo) {
+    id
+    upn
+    data
+    created
+  }
+}

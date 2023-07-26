@@ -1,0 +1,73 @@
+query Server($id: Int!) {
+  server(id: $id) {
+    id
+    name
+    allowAutoUpdate
+    description
+  }
+}
+query ServerExpert($id: Int!) {
+  server(id: $id) {
+    id
+    name
+    allowAutoUpdate
+    serverOSAutoUpdatePolicy {
+      allAutoUpdateEnabled
+      osAutoUpdateEnabled
+      osAutoUpdateHour
+      restartAfterUpdate
+      securityAutoUpdateEnabled
+    }
+    description
+    access {
+      name
+      ipAddress
+      groups {
+        id
+        name
+      }
+      fwConfig {
+        id
+        name
+        fwConfigOuts {
+          port
+          proto
+          host
+          groups {
+            id
+            name
+            description
+          }
+        }
+        fwConfigIns {
+          port
+          proto
+          host
+          groups {
+            id
+            name
+            description
+          }
+        }
+        changed
+      }
+      validFrom
+      validTo
+      changed
+      listeners {
+        listenPort
+        protocol
+        forwardPort
+        forwardHost
+        accessListenerType {
+          id,
+          glyph,
+          name
+        }
+        description
+      }
+      punchBack
+      restrictiveNetwork
+    }
+  }
+}

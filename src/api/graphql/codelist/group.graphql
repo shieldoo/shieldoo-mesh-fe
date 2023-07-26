@@ -1,0 +1,6 @@
+query CodeListGroups {
+  codelistGroups {
+    id
+    name
+  }
+}

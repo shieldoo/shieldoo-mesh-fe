@@ -1,0 +1,92 @@
+.p-button {
+  background-color: $c-primary_teal_default;
+  color: $c-primary_dark_blue;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: $font-family;
+  border: none;
+  border-radius: 4px;
+
+  &:enabled {
+    &:hover,
+    &:focus {
+      background-color: $c-primary_teal_hover;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  .p-button-icon {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-right: 0.8rem;
+  }
+
+  .p-button-icon-align-right {
+    margin-left: 0.8rem;
+    margin-right: 0;
+  }
+
+  .p-button-label {
+    line-height: 2.4rem;
+  }
+
+  &.p-button-secondary {
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      border-radius: 0.4rem;
+      color: $c-primary_dark_blue;
+      background-color: $c-surface_surface_20;
+    }
+    &:active {
+      border-radius: 0.4rem;
+      color: $c-primary_dark_blue;
+      background-color: $c-surface_surface_30;
+    }
+    &:focus {
+      background: transparent;
+    }
+  }
+
+  &.p-button-text,
+  &.p-button-link {
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+    }
+  }
+}
+
+.p-button-mini {
+  padding: 0.8rem;
+}
+
+.p-button-danger {
+  color: $c-status_red_100;
+}
+
+.p-button-primary-danger {
+  background-color: $c-status_red_100;
+  color: $c-surface_surface_white;
+  &:enabled {
+    &:hover,
+    &:focus {
+      background-color: $c-status_red_100;
+    }
+  }
+}
+
+.a-button {
+  text-decoration: none;
+}
+
+.p-button-primary {
+  background-color: $c-primary_teal_default !important;
+}

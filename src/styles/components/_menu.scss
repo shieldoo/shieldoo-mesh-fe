@@ -1,0 +1,147 @@
+.p-menu {
+  background-color: $c-surface_surface_white;
+  box-shadow: 0px 1px 3px $box-shadow;
+  border-radius: 4px;
+  min-width: 22rem;
+  padding: 2px;
+
+  .p-menuitem {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      border-radius: 4px;
+      background-color: $c-obsolete-grey_40;
+    }
+
+    &.danger .p-menuitem-link {
+      color: $c-status_red_100;
+    }
+  }
+
+  .p-menuitem-link {
+    color: $c-primary_dark_blue;
+    padding-bottom: 1px;
+    width: 100%;
+  }
+}
+
+.p-menuitem-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.p-menuitem-text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.p-disabled .p-menuitem-text {
+  opacity: 0.4;
+}
+
+.p-menuitem {
+  height: 40px;
+  padding: 0.8rem 1.2rem;
+}
+
+.p-menu-separator {
+  border-bottom: solid 1px $c-obsolete-grey_40;
+  margin: 4px 0;
+}
+
+.p-menuitem-icon {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-right: 0.8rem;
+  width: 20px;
+}
+
+.p-menubar {
+  .p-submenu-icon::after {
+    @include fa-icon;
+    font-family: fa-content($fa-style-family);
+    content: fa-content($fa-var-angle-down);
+    padding-left: 4px;
+  }
+
+  .p-submenu-list {
+    background-color: $c-surface_surface_white;
+    box-shadow: 0px 2px 4px $box-shadow;
+    border-radius: 4px;
+    padding: 2px;
+    margin-top: 14px;
+    min-width: 220px;
+    left: 0px;
+
+    .p-menuitem-link {
+      color: $c-primary_dark_blue;
+    }
+    .p-menuitem {
+      margin-right: 0px !important;
+    }
+    .p-menuitem-active {
+      &:hover {
+        background-color: $c-obsolete-grey_40;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .p-menuitem {
+    border-radius: 4px;
+    margin-right: 8px !important;
+
+    &:hover {
+      background-color: rgba($c-surface_surface_white, 0.2);
+      color: $c-surface_surface_white;
+    }
+  }
+
+  .p-menuitem-active {
+    background-color: rgba($c-obsolete-grey_40, 0.2);
+    border-radius: 4px;
+
+    .p-submenu-icon::after {
+      @include fa-icon;
+      font-family: fa-content($fa-style-family);
+      content: fa-content($fa-var-angle-up);
+      padding-left: 4px;
+    }
+  }
+
+  .p-menuitem-link {
+    width: "fit-content";
+    color: $c-surface_surface_white;
+  }
+}
+
+.p-tabmenu {
+  .p-tabmenuitem {
+    padding: 1.2rem 1.6rem;
+
+    &.p-highlight {
+      border-bottom: solid 4px $c-primary_teal_default;
+      &.p-error {
+        border-bottom: solid 4px $c-status_red_12;
+      }
+    }
+
+    &:not(.p-highlight):hover {
+      border-bottom: solid 4px rgba($c-primary_teal_default, .4);
+    }
+    &.p-error:hover {
+      border-bottom: solid 4px rgba($c-status_red_100, .4);
+    }
+  }
+
+  .p-tabmenuitem + .p-tabmenuitem {
+    margin-left: .4rem;
+  }
+
+  .p-menuitem-link {
+    color: $c-surface_surface_white;
+  }
+}

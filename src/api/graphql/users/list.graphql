@@ -1,0 +1,13 @@
+query Users($search: String, $origin: String) {
+  users(name: $search, origin: $origin) {
+    id
+    name
+    upn
+    description
+    roles
+    origin
+    userAccesses {
+      name
+    }
+  }
+}

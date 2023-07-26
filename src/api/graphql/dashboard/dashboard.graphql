@@ -1,0 +1,12 @@
+query AdminDashboard {
+  adminDashboard {
+    users
+    servers
+    invitedUsers
+    userStatistics {
+      date
+      hour
+      usersOnline
+    }
+  }
+}

@@ -1,0 +1,10 @@
+schema: src/api/graphql/schema.graphqls
+documents: src/api/graphql/**/*.graphql
+generates:
+  ./src/api/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-rtk-query:
+          importBaseApiFrom: './graphApi'
+          exportHooks: true

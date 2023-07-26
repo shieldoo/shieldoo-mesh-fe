@@ -1,0 +1,28 @@
+query AccessRights {
+  me {
+    userAccesses {
+      name
+      serversForAccess {
+        name
+        ipAddress
+        description
+        listeners {
+          listenPort
+          protocol
+          forwardPort
+          forwardHost
+          description
+          accessListenerType {
+            glyph
+          }
+        }
+        statistics {
+          isConnectd
+          isOverRestrictiveNetwork
+          lastContact
+          lastContactFromNow
+        }
+      }
+    }
+  }
+}

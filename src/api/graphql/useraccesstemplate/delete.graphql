@@ -1,0 +1,5 @@
+mutation UserAccessTemplateDelete($userAccessTemplateDeleteId: Int!) {
+  userAccessTemplateDelete(id: $userAccessTemplateDeleteId) {
+    id
+  }
+}

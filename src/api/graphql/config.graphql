@@ -1,0 +1,9 @@
+query Config {
+  config {
+    maxDBRecords
+    tenantId
+    tenantName
+    maxCertificateValidity
+    identityImportEnabled
+  }
+}

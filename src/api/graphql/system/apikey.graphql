@@ -1,0 +1,7 @@
+mutation CliApiConfigSave($data: CliApiConfigData!) {
+  systemCliApiConfigSave(data: $data) {
+    apiKey
+    isEnabled
+    url
+  }
+}

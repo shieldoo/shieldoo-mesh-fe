@@ -1,0 +1,6 @@
+mutation UserAccessDelete($userAccessDeleteId: Int!) {
+  userAccessDelete(id: $userAccessDeleteId) {
+    id
+    name
+  }
+}

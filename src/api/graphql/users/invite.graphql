@@ -1,0 +1,13 @@
+mutation UserInvite($data: InviteUserData!) {
+  userInvite(data: $data) {
+    id
+    name
+    upn
+    description
+    roles
+    origin
+    userAccesses {
+      name
+    }
+  }
+}

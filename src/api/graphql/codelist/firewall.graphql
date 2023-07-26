@@ -1,0 +1,6 @@
+query CodeListFirewalls {
+  codelistFirewalls {
+    id
+    name
+  }
+}

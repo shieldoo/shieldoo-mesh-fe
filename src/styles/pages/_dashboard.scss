@@ -1,0 +1,203 @@
+.page-dashboard {
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    .svg-inline--fa {
+      margin-right: 0.4rem;
+    }
+  }
+  .info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .tenant {
+    text-align: left;
+    display: flex;
+    margin-bottom: 16px;
+    .company {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .domain {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $c-obsolete-grey_100;
+    }
+    .p-avatar {
+      margin-right: 10px;
+    }
+  }
+  .tile-arrow {
+    color: $c-primary_dark_blue;
+    background-color: $c-obsolete-grey_40;
+    width: 24px;
+    height: 24px;
+    border-radius: 0 4px;
+    float: right;
+    .svg-inline--fa {
+      padding-top: 8px;
+    }
+    .fa,
+    .fa-regular {
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+  
+      &.fa-chevron-down {
+        transition: all 0.2s;
+      }
+    }
+  }
+  .tile {
+    background: $c-surface_surface_white;
+    box-shadow: 0px 1px 3px $box-shadow;
+    border-radius: 4px;
+  }
+  .tile-active {
+    border: 2px solid $c-primary_teal_hover;
+    cursor: pointer;
+    .tile-content {
+      margin-left: 20px;
+    }
+    .tile-arrow {
+      color: $c-surface_surface_white;
+      background-color: $c-primary_teal_hover;
+      margin: -2px;
+    }
+    .stats-tile {
+      margin-top: -2px;
+      margin-left: 2px;
+    }
+  }
+  .large {
+    width: 550px;
+    height: 296px;
+  }
+  .small {
+    width: 267px;
+    height: 140px;
+  }
+  .tiles {
+    display: flex;
+    gap: 16px;
+  }
+  .tiles-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 550px;
+  }
+  .tile-content-small {
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .tile-content {
+    display: flex;
+    margin-left: 24px;
+    height: 100%;
+
+    .title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      margin: 0;
+    }
+    .counter-tile {
+      .count {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .warning {
+        color: $c-status_orange_100;
+        width: 24px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 4px;
+      }
+    }
+
+    .stats-tile {
+      .title {
+        text-align: left;
+        margin: 12px 0;
+      }
+      .chart {
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 32px;
+        .icon {
+          color: $c-obsolete-grey_100;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    .header-tile {
+      color: $c-primary_dark_blue;
+      .title {
+        text-align: left;
+        margin: 2px 0 8px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .text {
+        text-align: left;
+        margin: 8px 0 8px 0;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      .icon {
+        background: conic-gradient(
+          from 135deg at 50% 50%,
+          #9bffe4 -54.95deg,
+          #9035e0 90.6deg,
+          #4bade1 188.4deg,
+          #9bffe4 305.05deg,
+          #9035e0 450.6deg
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 12px;
+      }
+      .icon-container {
+        text-align: left;
+      }
+    }
+  }
+  .tiles-header-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .tiles-header-content-wrapper {
+    max-width: 118rem;
+    margin: 0 auto;
+    @media only screen and (min-width: 1232px) {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
+    }
+  }
+  .tiles-header-tile {
+    margin: 0 auto;
+  }
+}

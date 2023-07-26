@@ -1,0 +1,43 @@
+.p-datatable {
+  text-align: left;
+  border: solid 1px $c-obsolete-grey_40;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .p-datatable-table {
+    background-color: $c-surface_surface_white;
+  }
+
+  thead, tr:not(:last-child) {
+    border-bottom: solid 1px $c-obsolete-grey_40;
+  }
+
+  th {
+    font-size: 1.2rem;
+    color: $c-obsolete-grey_100;
+  }
+
+  th, .max-records-shown-message {
+    font-weight: 500;
+    line-height: 2.4rem;
+    text-align: center;
+    padding: 0.8rem 1.6rem;
+    background-color: $c-surface_surface_0;
+  }
+
+  th + th {
+    border-left: solid 1px $c-obsolete-grey_40;
+  }
+
+  td {
+    font-size: 1.4rem;
+    line-height: 5.8rem;
+    padding: 0 1.6rem;
+    color: $c-primary_dark_blue;
+  } 
+
+  .max-records-shown-message {
+    font-size: 1.4rem;
+    color: $c-status_orange_100;
+  }
+}

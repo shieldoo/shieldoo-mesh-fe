@@ -1,0 +1,28 @@
+$checkbox-size: 1.6rem;
+
+.p-checkbox {
+  width: $checkbox-size;
+  height: $checkbox-size;
+
+  .p-checkbox-box {
+    background-color: $c-surface_surface_white;
+    border: solid 1px $c-primary_dark_blue;
+    border-radius: 4px;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+}
+
+.field-checkbox {
+  .field-checkbox-content {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    .p-checkbox {
+      margin-right: 4px;
+    }
+  }
+}

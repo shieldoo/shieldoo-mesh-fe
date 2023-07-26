@@ -1,0 +1,21 @@
+.page-users {
+  .p-avatar {
+    margin-right: 0.8rem;
+  }
+  .cut-text {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .onclick {
+    cursor: pointer;
+    color: $c-hyperlink_default;
+    text-decoration: none;
+  }
+  .toggle-button-label{
+    font-size: 1.4rem;
+    margin-left: .5rem;
+    cursor: pointer;
+  }
+}

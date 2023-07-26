@@ -1,0 +1,6 @@
+query CodeListUserAccessTemplates {
+  codelistUserAccessTemplates {
+    id
+    name
+  }
+}

@@ -1,0 +1,107 @@
+.p-toast {
+  width: 35rem;
+}
+
+.p-toast.p-toast-top-center {
+  left: 0;
+  top: 0;
+  transform: none;
+  width: 100%;
+  z-index: 1000;
+}
+
+.p-toast-message {
+  min-height: 4rem;
+  color: $c-primary_dark_blue;
+  border-radius: 4px;
+  border-left: solid 4px;
+  display: flex;
+  align-items: center;
+
+  & + .p-toast-message {
+    margin-top: .8rem;
+  }
+
+  .p-toast-message-content {
+    padding: 0 1.2rem;
+    align-items: center;
+    height: 100%;
+  }
+
+  .p-toast-message-icon {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-right: .8rem;
+  }
+
+  .p-toast-message-text {
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2.4rem;
+  }
+
+  .p-toast-icon-close {
+    width: 3rem;
+    color: currentColor;
+  }
+}
+
+.p-toast-message-error {
+  background-color: $c-status_red_12;
+  border-left-color: $c-status_red_100;
+
+  .p-toast-message-icon {
+    color: $c-status_red_100;
+
+    &::before {
+      @include fa-icon;
+      font-family: fa-content($fa-style-family);
+      content: fa-content($fa-var-exclamation-triangle);
+    }
+  }
+}
+
+.p-toast-message-warn {
+  background-color: $c-status_orange_12;
+  border-left-color: $c-status_orange_100;
+
+  .p-toast-message-icon {
+    color: $c-status_orange_100;
+
+    &::before {
+      @include fa-icon;
+      font-family: fa-content($fa-style-family);
+      content: fa-content($fa-var-exclamation-triangle);
+    }
+  }
+}
+
+.p-toast-message-success {
+  background-color: $c-status_green_12;
+  border-left-color: $c-status_green_100;
+
+  .p-toast-message-icon {
+    color: $c-status_green_100;
+
+    &::before {
+      @include fa-icon;
+      font-family: fa-content($fa-style-family);
+      content: fa-content($fa-var-check-circle);
+    }
+  }
+}
+
+.p-toast-message-info {
+  background-color: $c-status_blue_12;
+  border-left-color: $c-status_blue_100;
+
+  .p-toast-message-icon {
+    color: $c-status_blue_100;
+
+    &::before {
+      @include fa-icon;
+      font-family: fa-content($fa-style-family);
+      content: fa-content($fa-var-info-circle);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+mutation UserDeviceCreate($userAccessId: Int!, $data: AccessDeviceData!, $publicKey: String) {
+  userDeviceCreate(userAccessId: $userAccessId, data: $data, publicKey: $publicKey) {
+    access {
+      id
+      name
+      ipAddress
+    }
+    certificate
+    caPublicKey
+    lighthouseIp
+    lighthousePort
+    lighthousePrivateIp
+  }
+}

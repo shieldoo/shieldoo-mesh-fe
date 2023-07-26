@@ -1,0 +1,5 @@
+mutation UserDeviceSaveNote($id: Int!, $note: String!) {
+  userDeviceSaveNote(id: $id, note: $note) {
+    id
+  }
+}

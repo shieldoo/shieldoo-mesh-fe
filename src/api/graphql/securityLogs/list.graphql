@@ -1,0 +1,8 @@
+query SecurityLogs($filter: String, $upn: String, $createdFrom: DateTime, $createdTo: DateTime) {
+  securityLogs(filter: $filter, upn: $upn, createdFrom: $createdFrom, createdTo: $createdTo) {
+    id
+    upn
+    data
+    created
+  }
+}

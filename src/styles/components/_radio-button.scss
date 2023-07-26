@@ -1,0 +1,31 @@
+$radio-button-size: 1.6rem;
+$radio-button-icon-size: .8rem;
+
+.p-radiobutton {
+  width: $radio-button-size;
+  height: $radio-button-size;
+
+  .p-radiobutton-box {
+    border: 1px solid $c-primary_dark_blue;
+    border-radius: 50%;
+    background-color: transparent;
+    width: $radio-button-size;
+    height: $radio-button-size;
+
+    .p-radiobutton-icon {
+      width: $radio-button-icon-size;
+      height: $radio-button-icon-size;
+      background-color: $c-primary_dark_blue;
+      border-radius: 50%;
+    }
+  }
+  .p-radiobutton-box.p-disabled {
+    background-color: $c-obsolete-grey_40;
+  }
+}
+
+.field-radio-button {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}

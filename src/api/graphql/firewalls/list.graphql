@@ -1,0 +1,6 @@
+query Firewalls($name: String) {
+  firewallConfigurations(name: $name) {
+    id
+    name
+  }
+}

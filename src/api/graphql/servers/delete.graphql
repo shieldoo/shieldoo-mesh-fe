@@ -1,0 +1,5 @@
+mutation ServerDelete($id: Int!) {
+  serverDelete(id: $id) {
+    id
+  }
+}

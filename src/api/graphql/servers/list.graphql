@@ -1,0 +1,45 @@
+query Servers($name: String) {
+  servers(name: $name) {
+    id
+    name
+    allowAutoUpdate
+    serverOSAutoUpdatePolicy {
+      allAutoUpdateEnabled
+      osAutoUpdateEnabled
+      osAutoUpdateHour
+      restartAfterUpdate
+      securityAutoUpdateEnabled
+    }    
+    description
+    access {
+      ipAddress
+      description
+      statistics {
+        isConnectd
+        isOverRestrictiveNetwork
+        lastContact
+        lastContactFromNow
+      }
+      deviceInfo {
+        name
+        deviceId
+        deviceOSType
+        deviceOS
+        deviceSWVersion
+        osAutoUpdate {
+          description
+          lastUpdate
+          lastUpdateOutput
+          lastUpdateSuccess
+          name
+          osType
+          otherUpdates
+          otherUpdatesCount
+          securityUpdates
+          securityUpdatesCount
+          version
+        }
+      }
+    }
+  }
+}

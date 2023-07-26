@@ -1,0 +1,53 @@
+@import '~primereact/resources/primereact.min',
+        '~primeflex/primeflex';
+
+@import "~fork-awesome/scss/fork-awesome.scss";
+@import "~fork-awesome/scss/_variables.scss";
+@import "~fork-awesome/scss/_mixins.scss";
+
+@import 'abstracts/tools',
+        'abstracts/variables';
+
+@import 'layout/typography',
+        'layout/base',
+        'layout/primeicons',
+        'layout/primereact';
+
+@import 'components/button',
+        'components/calendar',
+        'components/content-tabs',
+        'components/checkbox',
+        'components/datatable',
+        'components/dialog',
+        'components/divider',
+        'components/dropdown',
+        'components/empty-content',
+        'components/filter-panel',
+        'components/headerpanel',
+        'components/input',
+        'components/input-switch',
+        'components/inviteusersdialog',
+        'components/loader',
+        'components/menu',
+        'components/multiselect',
+        'components/panel',
+        'components/profileportrait',
+        'components/radio-button',
+        'components/selectbutton',
+        'components/splitbutton',
+        'components/tag',
+        'components/toast',
+        'components/tooltip',
+        'components/topbar',
+        'components/validator',
+        'components/warning-content';
+
+@import 'pages/dashboard';
+@import 'pages/client-connect';
+@import 'pages/users';
+@import 'pages/servers';
+@import 'pages/system';
+@import 'pages/mydevices';
+@import 'pages/myaccessrights';
+@import 'pages/entity-detail';
+@import 'pages/useraccesstemplates';

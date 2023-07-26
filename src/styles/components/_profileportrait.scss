@@ -1,0 +1,27 @@
+.p-avatar {
+  background-color: $c-primary_teal_hover;
+  color: $c-surface_surface_white;
+  font-size: 1.4rem;
+  height: 3.3rem;
+  width: 3.3rem;
+
+  &.p-avatar-circle {
+    border-radius: 50%;
+  }
+
+  &.p-avatar-lg {
+    width: 4rem;
+    height: 4rem;
+
+    font-size: 1.6rem;
+  }
+
+  &.p-avatar-xl {
+    width: 7rem;
+    height: 7rem;
+
+    font-size: 3.1rem;
+    border: solid 2px $c-surface_surface_white;
+    border-width: 3px;
+  }
+}

@@ -1,0 +1,21 @@
+.filter-panel {
+  border-bottom: solid 1px $c-obsolete-grey_40;
+  background-color: $c-surface_surface_white;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.6rem 0;
+  }
+
+  .p-button-link {
+    color: $c-status_blue_100;
+    text-decoration: underline;
+
+    &:hover {
+      color: $c-primary_dark_blue;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.p-dropdown {
+  @include input-element;
+}
+
+.p-dropdown-panel {
+  @include dropdown-panel;
+}
+
+.p-dropdown-item {
+  padding: 0 .8rem;
+
+  &:hover {
+    background-color: $c-obsolete-grey_40;
+  }
+
+  & + .p-dropdown-item {
+    margin-top: .4rem;
+  }
+}
+
+.p-dropdown.p-component.p-invalid {
+  border-color: $c-status_red_100;
+}
+
+.p-dropdown.p-component.p-disabled {
+  background-color: $c-surface_surface_0;
+  opacity: 0.75;
+}

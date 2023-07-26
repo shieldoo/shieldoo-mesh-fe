@@ -1,0 +1,5 @@
+mutation FirewallDelete($id: Int!) {
+  firewallConfigurationDelete(id: $id) {
+    id
+  }
+}

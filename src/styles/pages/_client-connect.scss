@@ -1,0 +1,275 @@
+.page-client-setup {
+  .text-white {
+    color: $c-surface_surface_white;
+  }
+
+  .text-dark {
+    color: $c-primary_dark_blue;
+  }
+
+  .scalled-element {
+    @media only screen and (max-width: 640px) {
+      font-size: 8px;
+    }
+  }
+
+  .shadow-container {
+    margin-top: 25px;
+    box-shadow: 0px 1px 3px $box-shadow;
+    background: $c-surface_surface_white;
+    color: $c-primary_dark_blue;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 400;
+
+    .p-button {
+      color: $c-primary_dark_blue;
+      background-color: $c-obsolete-grey_40;
+    }
+  }
+
+  .inline-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  .select-os {
+    text-align: center;
+
+    @media only screen and (min-width: 840px) {
+      width: 800px;
+    }
+
+    margin: 0 auto;
+
+    .p-button .p-button-icon {
+      margin-right: 0;
+    }
+    .p-button:enabled:hover,
+    .p-button:enabled:focus {
+      color: $c-obsolete-grey_40;
+      background-color: $c-obsolete-grey_100;
+    }
+
+    .p-button-secondary {
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .title {
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0em;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .info {
+      font-size: 15px;
+      line-height: 21px;
+      letter-spacing: 0em;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .select-os-item {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      height: 80px;
+      border-bottom: 1px solid $c-obsolete-grey_40;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+
+      .icon {
+        padding-left: 20px;
+        width: 84px;
+        padding-right: 16px;
+      }
+
+      .content {
+        flex-grow: 1;
+        text-align: left;
+
+        .name {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        .description {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+
+      .action {
+        width: 80px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .client-wizard {
+    .p-button {
+      .svg-inline--fa {
+        padding-right: 8px;
+      }
+    }
+
+    .p-button-secondary {
+      border: none;
+      background: $c-obsolete-grey_40;
+    }
+
+    .p-input-icon-right {
+      position: relative;
+      display: inline-block;
+    }
+
+    .p-inputtext {
+      margin: 0;
+      width: 334px;
+      height: 40px;
+    }
+
+    .p-dropdown .p-inputtext{
+      width: auto;
+      height: 24px;
+    }
+    
+    .p-inputtextarea{
+      width: auto;
+      height: auto;
+    }
+    
+    .p-input-icon-right > .p-inputtext {
+      padding-right: 2.5rem;
+    }
+
+    .p-input-icon-right > i:last-of-type,
+    .p-input-icon-right > svg:last-of-type,
+    .p-input-icon-right > .p-input-suffix {
+      right: 0.75rem;
+      color: $c-obsolete-grey_100;
+
+      &:hover {
+        color: $c-primary_dark_blue;
+        cursor: pointer;
+      }
+    }
+
+    .p-input-icon-left > .p-input-prefix,
+    .p-input-icon-left > i,
+    .p-input-icon-left > svg,
+    .p-input-icon-right > .p-input-suffix,
+    .p-input-icon-right > i,
+    .p-input-icon-right > svg {
+      position: absolute;
+      top: 50%;
+      margin-top: -0.5rem;
+    }
+
+    .step-container {
+      .p-button:enabled:hover,
+      .p-button:enabled:focus {
+        background-color: $c-obsolete-grey_100;
+      }
+
+      display: flex;
+
+      .state {
+        color: $c-obsolete-grey_100;
+        @media only screen and (min-width: 600px) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+          padding-left: 4px;
+          padding-right: 4px;
+        }
+        padding-top: 24px;
+      }
+
+      .state-completed {
+        /* Colors cannot be variable */
+        --fa-secondary-opacity: 1;
+        --fa-primary-color: #ffffff; // $c-surface_surface_white
+        --fa-secondary-color: #039100; // $c-status_green_100
+      }
+
+      .step {
+        .title {
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        .content {
+          padding-bottom: 20px;
+          padding-right: 20px;
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          .highlight {
+            color: $c-primary_teal_hover;
+          }
+
+          .info {
+            margin-top: 12px;
+            margin-bottom: 12px;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+
+          .p-button {
+            .svg-inline--fa {
+              padding-right: 0.4rem;
+              width: 2rem;
+            }
+          }
+
+          .client-watcher {
+            display: flex;
+            align-items: center;
+            border-width: 0.1rem;
+            border-style: solid;
+            border-radius: 0.4rem;
+            padding: 0rem;
+            border-left-width: 0.4rem;
+            .icon {
+              margin: 0.8rem;
+            }
+          }
+          .client-watcher-waiting {
+            border-color: $c-status_blue_100;
+            background-color: $c-status_blue_12;
+          }
+          .client-watcher-connected {
+            border-color: $c-status_green_100;
+            background-color: $c-status_green_12;
+          }
+        }
+
+        .content-hidden {
+          display: none;
+        }
+      }
+    }
+
+    .step-completed {
+      border-left: 4px solid $c-status_green_100;
+    }
+  }
+}

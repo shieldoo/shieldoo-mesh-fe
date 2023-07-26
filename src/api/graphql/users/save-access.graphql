@@ -1,0 +1,6 @@
+mutation UserAccessSave($data: UserAccessData!) {
+  userAccessSave(data: $data) {
+    id
+    name
+  }
+}

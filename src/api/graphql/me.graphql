@@ -1,0 +1,30 @@
+query Me {
+  me {
+    id
+    upn
+    name
+    roles
+    description
+    origin
+    userAccesses {
+      id
+      name
+      accesses {
+        id
+        ipAddress
+        description
+        statistics {
+          isConnectd
+          lastContactFromNow
+          lastContact
+        }
+        deviceInfo {
+          deviceId
+          name
+          deviceOSType
+          deviceOS
+        }
+      }
+    }
+  }
+}

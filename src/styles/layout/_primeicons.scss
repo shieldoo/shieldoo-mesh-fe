@@ -1,0 +1,41 @@
+.pi-chevron-down::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-angle-down);
+}
+
+.pi-chevron-right::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-angle-right);
+}
+
+.pi-chevron-left::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-angle-left);
+}
+
+.pi-chevron-up::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-angle-up);
+}
+
+.pi-check::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-check);
+}
+
+.pi-times-circle::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-times-circle);
+}
+
+.pi-calendar::before {
+  @include fa-icon;
+  font-family: fa-content($fa-style-family);
+  content: fa-content($fa-var-calendar);
+}

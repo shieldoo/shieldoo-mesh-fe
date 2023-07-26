@@ -1,0 +1,64 @@
+input.p-inputtext {
+  appearance: none;
+  @include input-element;
+  &::placeholder { 
+    color: rgba($c-primary_dark_blue, 0.4);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input.p-inputtext.p-component.p-disabled {
+  background-color: $c-surface_surface_0;
+  opacity: 0.75;
+}
+
+textarea.p-inputtext {
+  @include input-element;
+  line-height: 1.4rem;
+}
+
+input.p-inputtext.p-invalid {
+  border-color: $c-status_red_100;
+}
+
+.p-inputgroup {
+  border: solid 1px $c-obsolete-grey_40;
+  border-radius: 4px;
+
+  input.p-inputtext {
+    border: none;
+  }
+
+  .p-inputgroup-addon {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    padding: 0.8rem;
+
+    .icon {
+      color: $c-obsolete-grey_40;
+    }
+    .icon-active {
+      color: $c-obsolete-grey_100;
+    }
+    & + .p-inputtext {
+      padding-left: 0;
+    }
+  }
+}
+
+.p-inputnumber {
+  .pi-angle-up::before {
+    @include fa-icon;
+    font-family: fa-content($fa-style-family);
+    content: fa-content($fa-var-angle-up);
+  }
+  .pi-angle-down::before {
+    @include fa-icon;
+    font-family: fa-content($fa-style-family);
+    content: fa-content($fa-var-angle-down);
+  }
+}

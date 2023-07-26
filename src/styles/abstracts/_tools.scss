@@ -1,0 +1,39 @@
+@mixin wrapper {
+  padding-left: 3.2rem !important;
+  padding-right: 3.2rem !important;
+
+  @media only screen and (min-width: 1180px) {
+    width: 1180px;
+    margin: 0 auto;
+  }
+}
+
+@mixin input-element {
+  border: solid 1px $c-obsolete-grey_40;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: .8rem;
+}
+
+@mixin dropdown-panel {
+  background-color: $c-surface_surface_white;
+  border: solid 1px $c-obsolete-grey_40;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px $box-shadow;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-top: .2rem;
+}
+
+.reversed {
+  transform: rotate(180deg);
+}
+
+.wrapper {
+  @include wrapper;
+}
+
+.fa-regular {
+  @include fa-icon;
+}

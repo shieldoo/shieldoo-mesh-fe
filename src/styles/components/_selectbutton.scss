@@ -1,0 +1,17 @@
+.p-selectbutton .p-button.p-highlight {
+  background-color: $c-primary_teal_default;
+}
+
+.p-selectbutton .p-button.p-highlight:hover {
+  background-color: $c-primary_teal_hover;
+}
+
+.p-selectbutton .p-button {
+  background-color: $c-surface_surface_0;
+  border-color: $c-obsolete-grey_100;
+}
+
+.p-selectbutton .p-button:hover {
+  background-color: $c-obsolete-grey_40;
+  border-color: $c-obsolete-grey_100;
+}

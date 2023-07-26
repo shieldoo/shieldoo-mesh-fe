@@ -1,0 +1,13 @@
+mutation UserSave($data: UserData!) {
+  userSave(data: $data) {
+    id
+    name
+    upn
+    description
+    roles
+    origin
+    userAccesses {
+      name
+    }
+  }
+}
