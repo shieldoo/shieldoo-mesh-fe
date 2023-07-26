@@ -1,5 +1,9 @@
 # Shieldoo Secure Network Frontend
 
+[![Build](https://github.com/shieldoo/shieldoo-mesh-fe/actions/workflows/build-release.yml/badge.svg)](https://github.com/shieldoo/shieldoo-mesh-fe/actions/workflows/build-release.yml) 
+[![Release](https://img.shields.io/github/v/release/shieldoo/shieldoo-mesh-fe?logo=GitHub&style=flat-square)](https://github.com/shieldoo/shieldoo-mesh-fe/releases/latest) 
+
+
 This repo holds the React frontend for administering a single Shieldoo network. It depends on [nebula-admin](https://github.com/cloudfieldcz/nebula-admin/).
 
 Other repos concerning Shieldoo are
