@@ -4,12 +4,11 @@ This repo holds the React frontend for administering a single Shieldoo network. 
 
 Other repos concerning Shieldoo are
 
-- [shieldoo-mesh-fe](https://github.com/cloudfieldcz/shieldoo-mesh-fe/) with the mesh administration frontend
-- [shieldoo-mesh-registration-portal](https://github.com/cloudfieldcz/shieldoo-mesh-registration-portal) with the mesh registration frontend
-- [shieldoo-mesh-domain-management](https://github.com/cloudfieldcz/shieldoo-mesh-domain-management) with the domain management service
-- [nebula-oauth](https://github.com/cloudfieldcz/nebula-oauth/) with the authentication service
-
-and [nebula-admin-web](https://github.com/cloudfieldcz/nebula-admin-web/) holding the old administration frontend written in Angular
+- [Shieldoo Mesh Admin](https://github.com/shieldoo/shieldoo-mesh-admin)
+- [Shieldoo Mesh FrontEnd](https://github.com/shieldoo/shieldoo-mesh-fe)
+- [Shieldoo Mesh Lighthouse](https://github.com/shieldoo/shieldoo-mesh-lighthouse)
+- [Shieldoo Mesh OAuth Server](https://github.com/shieldoo/shieldoo-mesh-oauth)
+- [Shieldoo Mesh Client (for users and servers in mesh network)](https://github.com/shieldoo/shieldoo-mesh)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
