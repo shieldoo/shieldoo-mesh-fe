@@ -35,6 +35,11 @@
       line-break: anywhere;
       white-space: normal !important;
     }
+
+    .p-button-secondary {
+      border: none;
+      background: $c-obsolete-grey_40;
+    }
   }
 
   .p-tabmenu .p-menuitem-link {

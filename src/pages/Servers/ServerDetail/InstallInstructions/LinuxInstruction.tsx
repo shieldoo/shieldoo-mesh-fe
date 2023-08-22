@@ -48,22 +48,26 @@ function TabContent({ tab, accessConfig }: { tab: string; accessConfig: string }
     getClientByOs(ClientOs.Raspberry).serverScriptUrl
   }" | sudo bash -s -- "${accessConfig}"`;
 
-  const manualSetupCommand = `# Stop mesh if it is already running.
+  const manualSetupCommand = `# All commands are executed as root.
+# This is reason why we use sudo for all commands.
+  
+# Stop mesh if it is already running.
 sudo /opt/shieldoo-mesh/shieldoo-mesh-srv -service stop
     
-# Create a directory.
-mkdir -p /opt/shieldoo-mesh
+# Create a directory if not exists.
+sudo mkdir -p /opt/shieldoo-mesh
     
 # Install the application.
 cat ./${filename} | sudo tar -xvz -C /opt/shieldoo-mesh
 sudo chmod 755 /opt/shieldoo-mesh/shieldoo-mesh-srv
+sudo chown root:root /opt/shieldoo-mesh/shieldoo-mesh-srv
     
 # Create a configuration file from the configuration data.
-/opt/shieldoo-mesh/shieldoo-mesh-srv -createconfig "${accessConfig}"
+sudo /opt/shieldoo-mesh/shieldoo-mesh-srv -createconfig "${accessConfig}"
 
 # Install the system service.install service
-/opt/shieldoo-mesh/shieldoo-mesh-srv -service install
-/opt/shieldoo-mesh/shieldoo-mesh-srv -service start`;
+sudo /opt/shieldoo-mesh/shieldoo-mesh-srv -service install
+sudo /opt/shieldoo-mesh/shieldoo-mesh-srv -service start`;
 
   switch (tab) {
     case "graphical":

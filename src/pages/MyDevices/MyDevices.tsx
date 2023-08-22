@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 import { Access, useMeQuery, useUserDeviceDeleteMutation, useUserDeviceSaveNoteMutation } from "../../api/generated";
 import HeaderPanel from "../../components/HeaderPanel";
 import Page from "../../components/Page";
-import { resolveDeviceTypeIcon } from "./MyDevicesUtils";
+import { resolveDeviceTypeIcon, resolveDeviceTypeName } from "./MyDevicesUtils";
 import DataTable from "../../components/DataTable";
 import { AppRoute, IAppRoute } from "../../AppRoute";
 import DateFormat from "../../Common/Utils/DateFormat";
@@ -134,6 +134,7 @@ function MyDevices(): JSX.Element {
             <h2 style={{ textAlign: "left", fontSize: 16 }}>
               <div style={{ fontSize: 12 }}>Access card</div>
               <i className="fa fa-lg fa-id-card-o" />
+              <span style={{ marginLeft: 8 }}>{access.name}</span>
             </h2>
             <DataTable
               className="user-list-table"
@@ -147,9 +148,12 @@ function MyDevices(): JSX.Element {
                 style={{ width: "15%" }}
                 header="Device"
                 body={(data: Access) => (
-                  <span>
-                    <i className={classNames('fa', 'fa-lg', resolveDeviceTypeIcon(data.deviceInfo?.deviceOSType || ""))} />
-                  </span>
+                  <>
+                    <span>
+                      <i className={classNames('fa', 'fa-lg', resolveDeviceTypeIcon(data.deviceInfo?.deviceOSType || ""))} />
+                    </span>
+                    <span style={{ marginLeft: 8 }}>{resolveDeviceTypeName(data.deviceInfo?.deviceOSType || "")}</span>
+                  </>
                 )}
               ></Column>
               <Column style={{ width: "20%" }} field="deviceInfo.name" header="Hostname"></Column>

@@ -21,7 +21,7 @@ function CommandWithClipboard(props: ClipboardProps) {
         className="p-button-secondary"
         icon={
           <i
-            className={classNames({ 'fa-beat': clipboard.promoteClipboard, 'fa-check': clipboard.isClipboardSet, 'fa-copy': !clipboard.isClipboardSet })}
+            className={classNames({'p-button-icon': true,  'fa': true, 'fa-beat': clipboard.promoteClipboard, 'fa-check': clipboard.isClipboardSet, 'fa-copy': !clipboard.isClipboardSet })}
           />
         }
         label="Copy to clipboard"

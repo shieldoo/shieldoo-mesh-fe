@@ -78,7 +78,8 @@ function MyAccessRightsPage(): JSX.Element {
           <div key={access.name}>
             <h2 style={{ textAlign: "left", fontSize: 16 }}>
               <div style={{ fontSize: 12 }}>Access card</div>
-              <i className="fa fa-lg fa-id-card-o" />             
+              <i className="fa fa-lg fa-id-card-o" />
+              <span style={{ marginLeft: 8 }}>{access.name}</span>             
             </h2>
             <DataTable
               lazy

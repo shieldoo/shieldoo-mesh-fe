@@ -217,3 +217,12 @@ aside.side-panel {
     }
   }
 }
+
+.fa-beat {
+  animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%, 50%, 100% { transform: scale(1.6, 1.6); }
+  30%, 80% { transform: scale(0.9, 1.0); }
+}
