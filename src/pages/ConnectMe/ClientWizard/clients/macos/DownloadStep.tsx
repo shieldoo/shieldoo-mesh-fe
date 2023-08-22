@@ -24,7 +24,7 @@ function DownloadStep({ setDone }: { setDone: () => void }) {
         <Button
           ref={buttonRef}
           className="p-button-secondary"
-          icon={<i className={classNames({ "fa fa-beat fa-download": promoteDownload })} />}
+          icon={<i className={classNames({ "p-button-icon fa fa-beat fa-download": promoteDownload })} />}
           label={`Download${client.downloadSize ? ` (${client.downloadSize})` : ""}`}
           onClick={() => {
             buttonRef.current.blur();
