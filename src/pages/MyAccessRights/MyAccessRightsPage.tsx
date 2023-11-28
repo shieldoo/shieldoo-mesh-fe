@@ -27,6 +27,7 @@ function MyAccessRightsPage(): JSX.Element {
     const access: Access = {
       id: 0,
       name: "",
+      additionalHostnames: [],
       changed: new Date(),
       fqdn: acc.serverName,
       ipAddress: acc.ip,

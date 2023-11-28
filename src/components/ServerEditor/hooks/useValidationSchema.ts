@@ -29,6 +29,19 @@ const expertSchema = (props: ValidationSchemaProps) =>
       fwConfig: Yup.object({
         id: Yup.number().required(ValidationMessage.REQUIRED),
       }),
+      additionalHostnames: Yup.mixed()
+        .test(
+          "is-string",
+          ValidationMessage.INVALID_HOSTNAMES,
+          function (value) {
+            if (typeof value === "string") {
+              // match regex
+              const regex = /^$|^(?:(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,6}|[a-zA-Z0-9-]{1,63})(?:,(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,6}|,[a-zA-Z0-9-]{1,63})*$/;
+              return regex.test(value);
+            }
+            return true;
+          }
+        ),
       validTo: Yup.string()
         .required("Enter a date or change to subscription lifetime")
         .test("min", "Date must be in the future", value => {

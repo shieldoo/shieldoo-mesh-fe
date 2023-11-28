@@ -6,6 +6,7 @@ export enum ValidationMessage {
   INVALID_IPV4_ADDRESS = "Invalid IP address",
   INVALID_PORT_RANGE = "The valid port range is 1-65535",
   INVALID_INPUT_TEXT = "Invalid input text. The allowed characters are: a-z A-Z 0-9 . -",
+  INVALID_HOSTNAMES = "Invalid hostnames, must be list of hostnames separated by coma",
 }
 
 export function addCustomYupMethods() {
@@ -29,6 +30,9 @@ export function addCustomYupMethods() {
   });
   Yup.addMethod(Yup.string, "inputText", function (message: string, _mapper = (a: any) => a) {
     return this.matches(/^[0-9a-zA-Z-.]{1,256}$/, message || ValidationMessage.INVALID_INPUT_TEXT);
+  });
+  Yup.addMethod(Yup.string, "hostnames", function (message: string, _mapper = (a: any) => a) {
+    return this.matches(/^$|^(?:(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,6}|[a-zA-Z0-9-]{1,63})(?:,(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,6}|,[a-zA-Z0-9-]{1,63})*$/, message || ValidationMessage.INVALID_HOSTNAMES);
   });
   Yup.addMethod(Yup.string, "ipv4", function (message: string, _mapper = (a: any) => a) {
     return this.matches(
