@@ -22,6 +22,7 @@ query ServerExpert($id: Int!) {
     access {
       name
       ipAddress
+      additionalHostnames
       groups {
         id
         name

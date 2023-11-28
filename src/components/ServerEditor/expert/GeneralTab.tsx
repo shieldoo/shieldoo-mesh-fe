@@ -16,6 +16,7 @@ function GeneralTab() {
   return (
     <>
       <FormikInputText label="Name" name="name" data-tooltip={"Defines a custom name for your server"} />
+      <FormikInputText label="Additional hostnames" name="access.additionalHostnames" data-tooltip="Defines a custom hostnames (separated by coma) for your server" />
       <FormikInputTextArea label="Note" name="description" rows={8} data-tooltip="Defines a custom description of your server" />
       <FormikCheckbox
         label="Automatic shieldoo update"

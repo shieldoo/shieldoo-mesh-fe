@@ -13,6 +13,7 @@ query Servers($name: String) {
     description
     access {
       ipAddress
+      additionalHostnames
       description
       statistics {
         isConnectd

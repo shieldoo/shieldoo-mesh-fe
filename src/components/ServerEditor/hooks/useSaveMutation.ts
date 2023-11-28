@@ -28,6 +28,7 @@ export function useSaveMutation() {
         description: server.description,
         access: {
           ipAddress: server.access?.ipAddress,
+          additionalHostnames: server.access?.additionalHostnames || [],
           groupsIds: getIdsFromNames(server.access?.groups || []),
           fwConfigId: server.access?.fwConfig?.id,
           validTo: new Date(server.access?.validTo),

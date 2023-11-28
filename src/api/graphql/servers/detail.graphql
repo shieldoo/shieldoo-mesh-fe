@@ -12,7 +12,9 @@ query ServerDetail($id: Int!) {
     }
     description
     access {
+      ipAddress
       description
+      additionalHostnames
       statistics {
         isConnectd
         isOverRestrictiveNetwork
